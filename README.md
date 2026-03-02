@@ -110,8 +110,8 @@
 **Clone the repository**
 
 ```bash
-git clone 
-cd <repository_name>
+git clone https://github.com/MrGray007/Agentic_DocPro
+cd Agentic_DocPro
 ```
 
 ### 📦 Install Dependencies
@@ -186,4 +186,5 @@ Use the `unstructured_pytesseract` module to specify the exact location of `tess
 import unstructured_pytesseract
 
 # Replace with your actual installation path
+
 unstructured_pytesseract.pytesseract.tesseract_cmd = r"C:\Users\YourUser\tesseract\tesseract.exe"
