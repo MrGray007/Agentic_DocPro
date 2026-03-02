@@ -1,0 +1,4 @@
+model_name,Extraction_accuracy,PII_precision,PII_recall,PII_F1
+gpt_4,94.71,100.0,96.62,93.06
+llama_3,89.62,80.88,87.22,87.38
+llama_3.3,92.37,95.0,90.66,92.66
