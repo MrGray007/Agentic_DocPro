@@ -18,6 +18,17 @@
 6. **Performance Reporting** – Provides step-wise latency, model evaluation metrics, and insights into best-performing models.
 
 ---
+---
+## ⚠️ Important Notice
+
+**Current version only works for:**
+- ✅ Invoices  
+- ✅ Contracts  
+- ✅ Resumes  
+
+❌ Other document types are not fully supported yet.
+---
+---
 
 ## 🧰 Tech Stack
 
@@ -197,6 +208,7 @@ import unstructured_pytesseract
 
 # Replace with your actual installation path
 unstructured_pytesseract.pytesseract.tesseract_cmd = r"C:\Users\YourUser\tesseract\tesseract.exe"
+
 
 
 
