@@ -57,7 +57,7 @@
 
 ---
 ![alt text](pics/output.png)   |    ![alt text](pics/output_2.png)
-
+                               |
 ---
 
 ## 🧩 Folder Structure
@@ -194,5 +194,6 @@ import unstructured_pytesseract
 
 # Replace with your actual installation path
 unstructured_pytesseract.pytesseract.tesseract_cmd = r"C:\Users\YourUser\tesseract\tesseract.exe"
+
 
 
