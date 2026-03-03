@@ -39,6 +39,13 @@ def check_condition(state:DocProc)->Literal['self_repair_extractor','redact_agen
         print('MAX repair reached---->forcing Redact')
         return 'redact_agent'
     return 'self_repair_extractor'
+
+def check_other_condition(state: DocProc) -> Literal['reporter_agent', 'extractor']:
+    if state.get("doc_type") not in ['invoice','contract','resume']:
+        return 'reporter_agent'
+    return 'extractor'
+
+
 def create_workflow():
     """
     Create the document processing workflow as a StateGraph.
@@ -69,7 +76,8 @@ def create_workflow():
     graph.add_node('reporter_agent',report_node)
 
     graph.add_edge(START,'classifier')
-    graph.add_edge('classifier','extractor')
+    # graph.add_edge('classifier','extractor')
+    graph.add_conditional_edges('classifier',check_other_condition)
     graph.add_edge('extractor','validator')
     #graph.add_edge('validator',END)
     graph.add_conditional_edges('validator',check_condition)
