@@ -56,9 +56,14 @@
 
 
 ---
-<div style="display:flex; justify-content:center; gap:20px;">
+<div style="display:flex; align-items:center; justify-content:center; gap:20px;">
+
   <img src="pics/output.png" width="400"/>
+
+  <div style="width:3px; height:300px; background-color:black;"></div>
+
   <img src="pics/output_2.png" width="400"/>
+
 </div>
                                
 ---
@@ -197,6 +202,7 @@ import unstructured_pytesseract
 
 # Replace with your actual installation path
 unstructured_pytesseract.pytesseract.tesseract_cmd = r"C:\Users\YourUser\tesseract\tesseract.exe"
+
 
 
 
